@@ -1,0 +1,6 @@
+# These were installed via conda
+python==3.11
+pillow==9.5.0
+numpy
+pyautogui
+easyocr
