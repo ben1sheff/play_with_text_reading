@@ -12,8 +12,8 @@ def make_printv(verbose):
         
 
 class NoLogOut:
-    def __init__(self, click_text, verbose=True):
-        self.ocr_reader = Reader(["en"], gpu=False)
+    def __init__(self, click_text, verbose=True, gpu=False):
+        self.ocr_reader = Reader(["en"], gpu=gpu)
         self.click_text = click_text
         self.last_mouse_pos = pag.position()
         self.center = None
